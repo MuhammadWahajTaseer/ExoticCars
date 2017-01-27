@@ -23,16 +23,10 @@ h2 {
 	padding-bottom: 25px;
 }
 
-/*Customizing the banner*/
-.banner{
-	display: block;
-	border: 3px; solid black;
-}
-
 /*home page paragraph*/
 #descriptionHome{
 	text-align: center;
-	font-size: 30px;
+	font-size: 24px;
 	font-family: 'Francois one', cursive;
 }
 
@@ -40,6 +34,8 @@ h2 {
 #homeBanner{
 	display: block;
 	margin: auto;
+	width: 100%;
+	height:auto;
 }
 
 /*Adding space before the content*/
@@ -54,7 +50,7 @@ h2 {
 }
 
 /*Distribution of page for columns -- home page*/
-.c1{width: 20%;} .c2{width: 60%;} .c3{width: 20%;}
+.c1{width: 25%;} .c2{width: 50%;} .c3{width: 25%;}
 
 /*Distribution of page for columns*/
 .col1{width: 40%;} .col2{width: 35%;} .col3{width: 25%;}
@@ -74,17 +70,16 @@ h2 {
 	border-collapse: collapse;
 	vertical-align:middle;
 }
-/*Background colours
-.performance tr:nth-child(even) {background-color: #BDBDBD;}*/
+/*Background colours for the performance table*/
 .performance tr:nth-child(odd) {background-color: #bdbdbd ;}
 /* Right aligning the specs */
 .ans{
 	text-align: right;
 }
 .performanceCell {
-
   vertical-align: center;
 }
+
 /*Price tag */
 .price{
 	font-family: 'Lobster', cursive;
@@ -92,27 +87,6 @@ h2 {
 	font-size: 32px;
 	margin-top: 70px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Remove margins and padding from the list, and add a black background color */
 ul.navBar {
@@ -156,8 +130,7 @@ ul.navBar li a:hover {background-color: #555;}
   }
 }
 
-
-/*Why doesn't it work*/
-@media screen and (max-width:438px) {
-	.col2 {display: none;}
+/*When the screen gets small enough only cars and their price is displayed*/
+@media screen and (max-width:820px) {
+	.performanceCell {display: none;}
 }
