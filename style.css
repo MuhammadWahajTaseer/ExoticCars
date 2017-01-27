@@ -1,0 +1,163 @@
+/*Styling the body*/
+body {
+	background-color: #D3D3D3;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*Custom headers*/
+h1 {
+  color: #000000;
+  text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 28px;
+}
+
+/*Customizing the car titles*/
+h2 {
+	font-family: 'Lobster', cursive;
+	font-size: 46px;
+	text-align: center;
+	padding-bottom: 0;
+	margin: 0;
+	padding-bottom: 25px;
+}
+
+/*Customizing the banner*/
+.banner{
+	display: block;
+	border: 3px; solid black;
+}
+
+/*home page paragraph*/
+#descriptionHome{
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Francois one', cursive;
+}
+
+/*Centering hte banner*/
+#homeBanner{
+	display: block;
+	margin: auto;
+}
+
+/*Adding space before the content*/
+.content{padding-top: 25px;}
+
+/* Centering the pics */
+.tablePics{
+	display: block;
+	margin: auto;
+	height: 300px;
+	width: 525px;
+}
+
+/*Distribution of page for columns -- home page*/
+.c1{width: 20%;} .c2{width: 60%;} .c3{width: 20%;}
+
+/*Distribution of page for columns*/
+.col1{width: 40%;} .col2{width: 35%;} .col3{width: 25%;}
+
+/* Customizing the table */
+.carTable {
+  width: 100%;
+}
+
+/* Customizing performance table */
+.performance{
+	width: 100%;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	margin: 0;
+	border-collapse: collapse;
+	vertical-align:middle;
+}
+/*Background colours
+.performance tr:nth-child(even) {background-color: #BDBDBD;}*/
+.performance tr:nth-child(odd) {background-color: #bdbdbd ;}
+/* Right aligning the specs */
+.ans{
+	text-align: right;
+}
+.performanceCell {
+
+  vertical-align: center;
+}
+/*Price tag */
+.price{
+	font-family: 'Lobster', cursive;
+	text-align: center;
+	font-size: 32px;
+	margin-top: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.navBar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+  text-align: center;
+  font-family: 'Vollkorn', serif;
+}
+
+/*Aligning the ome button in navbar*/
+#home{margin-right: 200px;}
+
+/* Float the list items side by side */
+ul.navBar li {
+	display: inline;
+}
+
+/* Style the links inside the list items */
+ul.navBar li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.navBar li a:hover {background-color: #555;}
+
+/* When the screen is less than a certain amount of pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the navBar (li.icon) */
+@media screen and (max-width:438px) {
+  ul.navBar li:not(:first-child) {display: none;}
+  ul.navBar li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+
+/*Why doesn't it work*/
+@media screen and (max-width:438px) {
+	.col2 {display: none;}
+}
